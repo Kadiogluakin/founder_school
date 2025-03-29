@@ -1,30 +1,39 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-white text-black py-20 md:py-32 relative border-b border-black">
+    <section className="bg-white text-black py-16 md:py-24 border-b border-gray-200">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 font-title">
-            <span className="text-black">From <span className="text-blue/80">Idea</span> to <span className="text-yellow/90">Execution</span></span>
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-6 flex justify-center">
+            <Image 
+              src="/images/logos/FounderSchoolLogo.png" 
+              alt="Founder School Logo" 
+              width={450}
+              height={281}
+              priority
+            />
+          </div>
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 font-title">
+            <span className="text-black">From <span className="text-blue">Idea</span> to <span className="text-yellow">Execution</span></span>
           </h1>
-          <p className="text-lg md:text-xl mb-12 text-gray-600 max-w-3xl mx-auto">
-            A 2-month equity-free program designed to help early-stage founders and aspiring entrepreneurs 
-            launch innovative solutions leveraging cutting-edge technologies.
+          <p className="text-lg md:text-xl mb-10 text-gray-800 max-w-3xl mx-auto">
+            Join our next cohort! A 2-month equity-free program for early-stage founders launching innovative solutions with cutting-edge tech.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
-              href="https://docs.google.com/forms/d/1tPyZAij_VM-hV67P4J5rw7LLSuXa2-rR2tYP77XiMGw/viewform?edit_requested=true"
-              className="bg-blue text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow hover:text-black transition"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScmefH0ISkSfCdQ-0JUnp35oaP4sVoqrDjylNGcFv0i8YtPYA/viewform"
+              className="bg-blue text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-dark transition duration-200 ease-in-out"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Apply Now
+              Apply for Cohort 2
             </Link>
             <Link 
-              href="#program"
-              className="bg-transparent border border-gray-300 text-black px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition"
+              href="/program"
+              className="bg-transparent border border-blue text-blue px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue/10 transition duration-200 ease-in-out"
             >
               Learn More
             </Link>

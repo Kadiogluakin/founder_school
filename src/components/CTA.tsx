@@ -3,22 +3,21 @@ import Link from 'next/link';
 
 const CTA: React.FC = () => {
   return (
-    <section className="py-20 md:py-32 bg-gray-50 border-b border-black">
+    <section className="py-16 md:py-24 bg-gray-100 border-b border-gray-200">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-black">Ready to Build the Future?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-title text-gray-800">Ready to Build the Future?</h2>
           <div className="w-16 h-1 mx-auto mb-6 bg-black"></div>
-          <p className="text-lg md:text-xl text-gray-700 mb-10">
-            Apply now to join the first Founder School x Crecimiento cohort and work with Crecimiento's Movement, 
-            Protocol Labs, and various partners to pioneer the next generation of technology.
+          <p className="text-lg md:text-xl text-gray-500 mb-8">
+            Applications for Founder School Cohort 2 are open! Join world-class partners and mentors to pioneer the next generation of technology.
           </p>
           <Link 
-            href="https://docs.google.com/forms/d/1tPyZAij_VM-hV67P4J5rw7LLSuXa2-rR2tYP77XiMGw/viewform?edit_requested=true"
-            className="bg-blue text-white px-10 py-4 rounded-full text-lg font-semibold inline-block hover:bg-yellow hover:text-black transition-all duration-300"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScmefH0ISkSfCdQ-0JUnp35oaP4sVoqrDjylNGcFv0i8YtPYA/viewform"
+            className="bg-blue text-white px-10 py-4 rounded-full text-lg font-semibold inline-block hover:bg-blue-dark transition duration-200 ease-in-out"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply Now
+            Apply for Cohort 2
           </Link>
         </div>
       </div>
